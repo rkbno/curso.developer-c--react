@@ -1,0 +1,17 @@
+#azul {
+    width: 50vh;
+    height: 300px;
+    background-color: blue;
+}
+
+#vermelho {
+    width: 50vm;
+    height: 300px;
+    background-color: red;
+
+}
+
+.foto {
+    
+    width: 50%;
+}
