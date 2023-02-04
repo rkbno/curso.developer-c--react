@@ -4,6 +4,12 @@
   ],
   "hints": {
     "disown-opener": "off",
-    "meta-viewport": "off"
+    "meta-viewport": "off",
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ]
   }
 }

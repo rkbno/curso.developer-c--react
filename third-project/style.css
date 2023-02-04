@@ -1,0 +1,107 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cabecalho { 
+    background-color: rgb(247, 94, 6);
+    text-align: center;
+    padding: 10px;
+}
+
+.bolo {
+    background-image: url(scr/images/hero_bolo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.conteudo {
+    margin: auto;
+    max-width: 990px;
+    padding: 0 40px;
+    margin-top: 100px;
+}
+
+h1, h2,h3,h4,h5,h6 {
+    color: rgb(247, 94, 6);
+}
+
+.cartao {
+    
+    padding: 70px 100px;
+    margin: 50px 0;
+    border-radius: 20px;
+}
+
+.cartao:hover {
+    
+    box-shadow: 8px 8px 15px 12px rgb(205, 205, 205, 0.50);
+}
+
+.ingredientes {
+    cursor: url(scr/images/cursor_ingredientes.png), pointer;
+}
+
+.preparo  {
+    cursor: url(scr/images/cursor_preparo.png), pointer;
+} 
+
+.instrucoes {
+    cursor: url(scr/images/cursor_intrucoes.png), pointer;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.botao-comprar {
+    background-color: rgb(247, 94, 6);
+    padding: 10px;
+    border-radius: 20px;
+    color:aliceblue;
+}
+
+.botao-comprar:hover {
+    padding: 14px;
+}
+
+li {
+    margin-bottom: 14px;
+
+}
+
+.lista-ingredientes {
+    margin-bottom: 50px;
+}
+
+p {
+    line-height: 25px;
+} 
+
+.email {
+    
+    
+    padding: 5px;
+}
+
+.email:hover {
+    background-color: rgb(231, 75, 0);
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(247, 94, 6);
+    color:aliceblue
+}
+
+.footer-text {
+    max-width: 500px;
+    margin: auto;
+    line-height: 20px;
+}
