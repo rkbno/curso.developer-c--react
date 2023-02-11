@@ -17,7 +17,7 @@
     <div class="container">
 
         <nav class="img">       
-            <img class="navegacao-cadastro--img" src="src/imagens/pexels-matheus-bertelli-3321797.jpg" alt="plateia em uma palestra">
+            <img class="navegacao-cadastro--img" src="src/imagens/pexels-matheus-bertelli-3321797.jpg" style="margin-left: -1px; margin-top: -1px; width: 100%;" alt="plateia em uma palestra">
             
             <div class="navegacao">
                 <div class="navegacao-cadastro">
@@ -30,15 +30,18 @@
                     
                     <div class="navegacao-cadastro--formulario">
 
-                        <input type="text" name="nome" id="text" placeholder="Nome">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <select name="Estados" id="Estados">
-                            <option value="SP">São paulo</option>
-                        <option value="RJ">Rio de janeiro</option>
-                        <option value="BA">Bahia</option>
-                        <option value="ES" selected>Espirito Santo</option>
-                    </select>
-                    <input type="submit" value="inscreva-se">
+                        <form method="GET" action="#">
+                            <input type="text" name="nome" id="text" placeholder="Nome">
+                            <input type="email" name="email" id="email" placeholder="Email">
+
+                            <select name="Estados" id="estados">
+                                <option value="SP">São paulo</option>
+                                <option value="RJ">Rio de janeiro</option>
+                                <option value="BA">Bahia</option>
+                                <option value="ES" selected>Espirito Santo</option>
+                            </select>
+                        <input class="navegacao-cadastro--formulario--botao" type="submit" value="inscreva-se">
+                        </form>
                 </div>
                 </div>
                 
@@ -48,20 +51,28 @@
         </div>
     </nav>
 
-    <main class="container">
-        <div class="palestrante">
-            <h2 class="palestrante-titulo">O Palestrante</h2>
+    <main class="footer">
+        
+        
+        <div id="palestrante">
+            <nav>
+                
+                <h2 class="ponto">.</h2>
+                <div class="backgroud">
 
-            <p class="palestrante-paragrafo">
-                Carlos Fontana é conhecido por dar palestras que abalam a estrutura do marketing tradicional. <br>
-                Prepare-se para sair do evento com uma nova visão do que é possivel ser feito para o seu negócio decolar.
-            </p>
-            <p class="palestrante-formacao">
+                    <img src="src/imagens/pexels-tony-zed-3990502.jpg" style="margin-left: -1px;" alt="foto do palestrante" width="100px">
+                    
+                <h2 style="margin-top: 40px; color: white;">O Palestrante</h2>
+                
+                <p class="palestrante-paragrafo" style="margin-top: 20px;">
+                    Carlos Fontana é conhecido por dar palestras que abalam a estrutura do marketing tradicional. <br>
+                    Prepare-se para sair do evento com uma nova visão do que é possivel ser feito para o seu negócio decolar.
+                </p>
+                <p class="palestrante-formacao">
                 Formado em Marketing pela Univerdade XYZ e fudador da MarkUp, a empresa vencedora dos últimos 5 Prêmios MarkelingBr.
-            </p>
-        </div>
-        <div class="palestrante-img">
-            <img src="src/imagens/pexels-tony-zed-3990502.jpg" alt="foto do palestrante" width="300">
+                </p>
+            </div>
+            </nav>
         </div>
 
 
