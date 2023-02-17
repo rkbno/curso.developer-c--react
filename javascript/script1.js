@@ -1,38 +1,35 @@
-var idade = 10
+var idade = 17
+var pode = " "
 
-console.log(idade)
+
 if( idade >= 18 && idade <=65 ) {
-    
+    pode = "Pode"
 }
 else if (idade > 65)  {
-    
+    pode = "não pode"
 } else {
-    
+    pode = "Não pode"
 }
     
+console.log(idade)
+console.log(pode)
     
-switch (idade) {
-    case idade:
-        
-        console.log("Pode")
+switch (pode) {
+    case "Pode":
         console.log("Qual bebida deseja?")
         break;
-    case idade: 
+    case "não pode": 
         
-        console.log("Não pode")
-        console.log("Espere mais um ano")
+
+        console.log("Porquê causa problemas na sua idade")
         break;
-    case idade: 
-        console.log("Não pode")
-        console.log("Espere mais uns anos")
-        break;
-    case idade:
+        case "Não pode": 
         
-        console.log("Não pode")
-        console.log("Sua idade não é permitida por conta de problemas") 
-        break;   
+        console.log("Espere mais um tempo")
+        break;  
     default :
         console.log("ERRO 404")    
+        break;
 }
 
 
