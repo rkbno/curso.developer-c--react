@@ -46,11 +46,15 @@ function media(n1, n2) {
     var nota2 = n2;
     var media = (nota1 + nota2) / 2;
     
-    console.log(media);
+    // console.log(media);
+
+    return media;
 };
 
 
-media (5, 10);
-media (10, 8);
-media (3, 9);
-media (5, 1);
+var resultado1 = media (5, 10);
+var resultado2 = media (10, 8);
+var resultado3 = media (3, 9);
+var resultado4 = media (5, 1);
+
+console.log(resultado1 + ", " + resultado2 + ", " + resultado3 + " e " + resultado4)
