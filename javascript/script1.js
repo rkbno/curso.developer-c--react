@@ -32,11 +32,25 @@
 //         break;
 // }
 
-var alunos = ["Arnaldo", "Breno", "Camila", 
-              "Diana", "Eduarda", "Fabio", "Gabriel"]
+// var alunos = ["Arnaldo", "Breno", "Camila", 
+//               "Diana", "Eduarda", "Fabio", "Gabriel", "Pedro"];
+
+              
+// for (var aluno of alunos) {
+//     console.log(aluno)
+// }
+
+function media(n1, n2) {
+
+    var nota1 = n1;
+    var nota2 = n2;
+    var media = (nota1 + nota2) / 2;
+    
+    console.log(media);
+};
 
 
-
-for (var aluno of alunos) {
-    console.log(aluno)
-}
+media (5, 10);
+media (10, 8);
+media (3, 9);
+media (5, 1);
