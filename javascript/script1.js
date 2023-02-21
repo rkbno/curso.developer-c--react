@@ -61,10 +61,36 @@
 
 
 
-var media = function (n1, n2) {
-	return(n1 + n2) / 2; 
+// var media = function (n1, n2) {
+// 	return(n1 + n2) / 2; 
+// }
+
+// var m = media(3, 6);
+ 
+// 	console.log(m);
+
+var alunos = ["Pedro", "Miguel", "Breno"]
+var notaA = [4, 7, 6]
+var notaB = [5, 5, 8]
+
+function media (n1, n2) {
+	return (n1 + n2) / 2
 }
 
-var m = media(3, 6);
- 
-	console.log(m);
+function passou (media) {
+
+	if (media >= 7){
+		return "Aprovado"
+	}else{
+		return "Reprovado"
+	}
+}
+
+for (var txt in alunos) {
+	var nota1 = notaA[txt]
+	var nota2 = notaB[txt]
+	var m = media(nota1, nota2)
+
+	console.log(alunos[txt] + " - " + nota1 + 
+	" - " + nota2 + " - " + m + " - " + passou(m))
+}
