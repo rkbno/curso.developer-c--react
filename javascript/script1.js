@@ -93,4 +93,4 @@ for (var txt in alunos) {
 
 	console.log(alunos[txt] + " - " + nota1 + 
 	" - " + nota2 + " - " + m + " - " + passou(m))
-}
+} 
