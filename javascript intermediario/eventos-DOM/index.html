@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script>
+    <!-- <script>
         function passar(mouse){
             mouse.style.backgroundColor = "red"
         }
@@ -16,9 +16,9 @@
         
         
         
-    </script>
+    </script> -->
 
-    <style>
+    <!-- <style>
         div {
             
             display: inline-block;
@@ -30,14 +30,31 @@
 
             font-size: 2rem;
         }
-    </style>
+    </style> -->
 </head>
 
-<body onload="console.log('Carregado completamente')">
+<body>
 
     
-    <br></br>
-    <div onmouseover="passar(this)" onmouseout="sair(this)" onclick="this.style.backgroundColor = 'green'">Clique</div>
+    <h1 id="titulo">teste</h1>
 
+
+    <script>
+        var t = document.getElementById("titulo")
+
+        t.addEventListener("mouseover", mudarText)
+        t.addEventListener("mouseout", mouse)
+
+        function mudarText(){
+            this.innerHTML = "Mudei o texto"
+        }
+
+        function mouse(){
+            this.innerHTML = "Tirei de cima do texto"
+        }
+
+
+
+    </script>
 </body>
 </html>
