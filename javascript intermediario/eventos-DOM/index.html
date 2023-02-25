@@ -7,10 +7,13 @@
     <title>Document</title>
 
     <script>
-        function hideT(){
-            let h1 = document.getElementsByTagName('h1')[0]
-            h1.style.display = "none"
+        function passar(mouse){
+            mouse.style.backgroundColor = "red"
         }
+        function sair(rato){
+            rato.style.backgroundColor = "blue"
+        }
+        
         
         
     </script>
@@ -30,11 +33,11 @@
     </style>
 </head>
 
-<body>
+<body onload="console.log('Carregado completamente')">
 
-    <h1>clique em mim</h1>
-
-    <div onclick="hideT()">Clique</div>
+    
+    <br></br>
+    <div onmouseover="passar(this)" onmouseout="sair(this)" onclick="this.style.backgroundColor = 'green'">Clique</div>
 
 </body>
 </html>
