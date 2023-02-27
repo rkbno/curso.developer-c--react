@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sorteio de um carro</title>
+
+    <script>
+
+        
+        function sorteio (){
+
+            let name =["Breno", "Pedro", "João", "Camila", "Ayrton"]
+
+            let np = name.length
+            
+            let ns = Math.floor(Math.random() * np)
+
+            document.getElementById("h1").innerHTML = name[ns]
+
+        }
+
+    </script>
 </head>
 <body>
+
+    <h1 id="h1"></h1>
+
+    <button onclick="sorteio()">Sortear</button>
+
+
     
 </body>
-<script src="document/script.js"></script>
+
 </html>
