@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando o DOM</title>
+
+    <script>
+       
+        var numero = 0
+
+        var interval;
+
+       function mudarTexto(){
+        let h = document.getElementsByTagName("h1")[0]
+        h.innerHTML += " " + numero
+        numero++;
+       }
+       
+    //    function mudarCor (){
+    //         let h = document.getElementsByTagName("h1")[0]
+    //         h.style.color = "blue"
+
+    //         setInterval(mudarTexto , 2000)
+    //     }
+
+
+        function iniciar(){
+            // let h = document.getElementsByTagName("h1")[0]
+            // h.innerHTML = "Mudou o titulo"
+
+            // setTimeout(mudarCor , 1000)
+
+            interval = setInterval(mudarTexto , 1000)
+        }
+
+        function parar(){
+            clearInterval(interval)
+        }
+    
+    </script>
+
+
+</head>
+<body>
+    <h1>Titulo</h1>
+    <input onclick="iniciar ()" type="submit" value="Iniciar">
+    <input onclick="parar ()" type="submit" value="Parar">
+</body>
+</html>
