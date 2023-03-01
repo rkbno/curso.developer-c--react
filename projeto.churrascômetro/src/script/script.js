@@ -7,45 +7,51 @@
    equivalente a 1 hora
 */
 
-let adul = document.getElementById("adulto")
-let crian = document.getElementById("crianca")
-let durac = document.getElementById("duracao")
+var ad = document.getElementById("adulto")
+var cr = document.getElementById("crianca")
+var du = document.getElementById("duracao")
 
 
-let resultado = document.getElementById("resultado")
+var resultado = document.getElementById("resultado")
+var h = document.getElementById("h2")
 
 function calcular (){
     
 
-    let ad = adul.value
-    let cr = crian.value
-    let dr = durac.value 
+    let adulto = ad.value
+    let crianca = cr.value
+    let duracao = du.value 
 
 
 
-    let carne = carnePP(dr) * ad + (carnePP(dr) / 2 * cr)
-    let cerveja = cervejaPP(dr) * ad;
-    let bebidas = bebidasPP(dr) * ad + (bebidasPP(dr) / 2 * cr)
+    var carne = carnePP(duracao) * adulto + (carnePP(duracao) / 2 * crianca)
+    var cerveja = cervejaPP(duracao) * adulto;
+    var bebidas = bebidasPP(duracao) * adulto + (bebidasPP(duracao) / 2 * crianca)
 
+    
+    
+    
+    
+    
 
-
-    resultado.innerHTML = `<p>${carne / 1000} Kg de Carne</p>`
-
-    resultado.innerHTML += `<p>${Math.ceil(cerveja / 1000)} Latas de Cerveja</p>`
-
-    resultado.innerHTML += `<p>${Math.ceil(bebidas / 1000)} Garrafas 2L de Bebidas</p>`
+    resultado.innerHTML = `<h2>${''} Você vai precisar de:</h2>`
+    resultado.innerHTML += `<p>${carne / 1000} Kg de Carne</p>`
+    resultado.innerHTML += `<p>${Math.ceil(cerveja / 350)} Latas de Cerveja</p>`
+    resultado.innerHTML += `<p>${Math.ceil(bebidas / 2000)} Garrafas 2L de Bebidas</p>`
 
     
 }
 
+
+
+
 function carnePP(dr){
     if (dr >= 6){
         return 650
-    }else {
+    } else{ 
         return 400
     }
 }
-
 function cervejaPP(dr){
     if (dr >= 6){
         return 2000
