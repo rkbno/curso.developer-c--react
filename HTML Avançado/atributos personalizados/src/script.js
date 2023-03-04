@@ -28,7 +28,7 @@ for (let i = 0; i < num; i++){
 
 }
 
-
+lista.innerHTML = conteudo
 
 
 
