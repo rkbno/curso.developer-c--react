@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <video preload="" controls autoplay muted loop width="300px" src="scr/video/league-of-legends-destroi-as-pessoas-bronziocre.mp4" poster="../atributos personalizados/src/imagens/like.jpg"></video>
+    <title>Video</title>
 
+    <link rel="stylesheet" href="scr/style.css">
+
+<body>
+
+  <div class="container">
+
+    <video id="video1" src="scr/video/onde-o-linux-pode-ser-usado-curso-linux-01 (1).mp4"></video>
+
+
+    <div class="controle">
+      <img  class="btn voltar" onclick="volta()" src="scr/controls/back.png">
+      <img  class="btn avancar" onclick="avancar()" src="scr/controls/foward.png">
+      
+      <img  class="btn comecar" onclick="comecar()" src="scr/controls/play.png">
+      <img  class="btn parar" onclick="stop()" src="scr/controls/stop.png">
+      
+    </div>
+
+
+  </div>
+        
+
+
+    <script src="scr/script.js"></script>
 </body>
 </html>
