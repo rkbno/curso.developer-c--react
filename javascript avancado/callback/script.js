@@ -1,13 +1,13 @@
 let usuarios = ["Adriano", "Marcia", "José" ]
 
 
-function inserirUsuario(nome, qualquerCoisa){
+function inserirUsuario(nome, callback){
 
-    setTimeout(() => {
+
+    setTimeout(()=>{
         usuarios.push(nome)
-        qualquerCoisa()
-    }, 5000)
-    
+        callback()
+    }, 1000)
 }
 
 

@@ -1,19 +1,22 @@
+function newButton (text, callback) {
+    const body = document.querySelector("body")
+    const button = document.createElement("button")
+    button.textContent = text
 
-function mudar(){
-    let q = document.getElementById("quadrado")
-    let h = document.getElementById("h1")
-    let btn = document.getElementById("botao")
+    callback(button)
 
-    h.style.backgroundColor = "red"
+    body.insertAdjacentElement("beforeend", button)
 
-    h.style.visibility = "visible"
-    
-    setTimeout(() => {        
-        q.style.backgroundColor = "green"
-        
-    }, 1000)
+    return button
 }
 
-
-
+newButton("login", (button) => {
+    button.style.cssText = `
+        font-size: 40px;
+        background-color: red;
+        border: none;
+        text-transform: uppercase;
+        padding: 35px;
+    `;
+})
 
