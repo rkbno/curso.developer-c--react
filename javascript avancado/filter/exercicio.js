@@ -26,4 +26,4 @@ function Reprovados(aluno){
 function Aprovados(aluno){
     return aluno.nota >= 7
 }
-console.log(universitarios.filter(Aprovados))
+console.log(alunos.filter(Aprovados))
