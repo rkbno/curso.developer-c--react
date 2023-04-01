@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fetch</title>
+
+    <style>
+        label {
+            display: block;
+        }
+
+        input {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-    <form>
-        <input type="text" id="valor"></input>
-        <button value="Converter" onclick="converter()"></button>
-        
+    <form id="buscaCep">
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep">
+        <input type="button" value="buscar Cep" id="btnCep">
     </form>
+
+    <div class="resultadoCep">
+
+    </div>
+
+    <div>
+        <h2>Preço BTC</h2>
+        <p class="btc">
+
+        </p>
+    </div>
+
+    <div>
+        <p class="piada"></p>
+        <button class="proximo">Próximo</button>
+    </div>
+        
 
 
 
