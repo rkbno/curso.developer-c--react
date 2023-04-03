@@ -1,0 +1,6 @@
+{
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingOvertype": "never",
+    "html.autoClosingTags": false,
+    "html.autoCreateQuotes": false
+}
