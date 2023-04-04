@@ -1,11 +1,10 @@
-.grid {
-    grid-template-columns: repeat(5, 1fr);
+.content {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    width: 100%;
+    width:100%;
     max-width: 800px;
-    margin: 0 auto;
- 
+    margin: 100px auto;
 }
 
 .card {
@@ -15,28 +14,28 @@
     position: relative;
     transition: all 400ms ease;
     transform-style: preserve-3d;
+    background-color: #333;
 }
 
-.face {
-    width: 100%;
+.face { 
     height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
     position: absolute;
+    border: 2px solid rgb(179, 28, 28);
+    border-radius: 5px;
 }
 
 .front {
-    background-image: url('../src/imagens/Ahri_Skin01.jpg');
-    background-size: cover;
-    background-position: center;
     
-
+    transform: rotateY(180deg)
+    
 }
 
 .back {
-    background-image: url('../src/imagens/Rare\ Gallery\ wallpaper.jpeg');
-    background-size: cover;
-    background-position: center;
+    background-image:url(../src/imagens/Rare\ Gallery\ wallpaper.jpeg);
     backface-visibility: hidden;
-
 }
 
 .card:hover {
