@@ -6,6 +6,7 @@ const characters = [
 'ahri',
 'akali',
 'akshan',
+'ashe',
 'ekko',
 'evelynn',
 'fiora',
@@ -41,7 +42,7 @@ const newCard = (character) => {
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
 
-    front.style.backgroundImage = `url('../imagens/ashe.png')`;
+    front.style.background = `red url('../imagens/${character}.jpg')`
 
     card.appendChild(front);
     card.appendChild(back);

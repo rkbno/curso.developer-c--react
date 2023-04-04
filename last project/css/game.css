@@ -20,21 +20,23 @@
 .face { 
     height: 100%;
     width: 100%;
-    background-size: cover;
-    background-position: center; 
     position: absolute;
     border: 2px solid rgb(179, 28, 28);
     border-radius: 5px;
+    background-size: cover;
+    background-position: center; 
 }
 
 .front {
     
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-position: center; 
     
 }
 
 .back {
-    background-image:url(../imagens/Rare\ Gallery\ wallpaper.jpeg);
+    background-image:url(../imagens/outras/Rare\ Gallery\ wallpaper.jpeg);
     backface-visibility: hidden;
 }
 
