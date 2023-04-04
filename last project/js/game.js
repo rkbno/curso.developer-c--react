@@ -35,11 +35,13 @@ const createElement = (tag, classN) => {
     return element;
 }
 
-const newCard = () => {
+const newCard = (character) => {
 
     const card = createElement('div', 'card');
-    const front = createElement('div', 'face front')
+    const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
+
+    front.style.backgroundImage = `url('../imagens/ashe.png')`;
 
     card.appendChild(front);
     card.appendChild(back);
@@ -50,7 +52,8 @@ const newCard = () => {
 
 const loadGame = () => {
     characters.forEach((character) =>{
-        const card = newCard();
+
+        const card = newCard(character);
         grid.appendChild(card)
     })
 } 
