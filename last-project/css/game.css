@@ -16,11 +16,11 @@ main {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 15px;
     width:100%;
-    max-width: 800px;
-    margin: 100px auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .card {
@@ -41,6 +41,7 @@ main {
     border-radius: 5px;
     background-size: cover;
     background-position: center; 
+    transition: all 500ms ease;
 }
 
 .front {
@@ -57,5 +58,13 @@ main {
 }
 
 .card:hover {
+}
+
+.reveal-card {
     transform: rotateY(180deg);
+    opacity: 0.5;
+}
+
+audio {
+    opacity: 0;
 }
