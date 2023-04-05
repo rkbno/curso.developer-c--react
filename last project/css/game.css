@@ -1,3 +1,19 @@
+
+main { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../gif/vayne.gif');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+
+
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
