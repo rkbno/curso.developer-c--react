@@ -30,7 +30,7 @@ main {
     position: relative;
     transition: all 400ms ease;
     transform-style: preserve-3d;
-    background-color: #333;
+    
 }
 
 .face { 
@@ -57,13 +57,15 @@ main {
     backface-visibility: hidden;
 }
 
-.card:hover {
-    transform: rotateY(180deg);
-}
 
 .reveal-card {
     transform: rotateY(180deg);
+}
+
+.disabled-card {
+    filter: saturate(0);
     opacity: 0.5;
+
 }
 
 audio {
