@@ -43,6 +43,8 @@ const newCard = (character) => {
     const back = createElement('div', 'face back');
 
     front.style.background = `red url('../imagens/${character}.jpg')`
+    front.backgroundPosition = 'center';
+    front.style.backgroundSize = 'cover';
 
     card.appendChild(front);
     card.appendChild(back);
@@ -52,7 +54,14 @@ const newCard = (character) => {
 
 
 const loadGame = () => {
-    characters.forEach((character) =>{
+
+    const dupplicateCards = [ ... characters, ... characters ]
+
+    const cardsRadom = dupplicateCards.sort(() => Math.random() - 0.5)
+
+    cardsRadom.forEach((character) =>{
+
+        
 
         const card = newCard(character);
         grid.appendChild(card)
