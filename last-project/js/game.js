@@ -59,8 +59,7 @@ const loadGame = () => {
     })
 } 
 
-loadGame()
-
+ loadGame() 
     
 
 
