@@ -3,16 +3,31 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('../gif/vayne.gif');
+    background: red;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     padding: 20px 20px 50px;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+    font-size: 0.5rem;
 
 
 }
+
 
 .content {
     display: grid;
@@ -30,6 +45,7 @@ main {
     position: relative;
     transition: all 400ms ease;
     transform-style: preserve-3d;
+    background-color: #ccc;
     
 }
 
