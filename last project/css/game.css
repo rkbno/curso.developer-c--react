@@ -96,5 +96,6 @@ header {
     z-index: -100;
     background: url(../imagens/outras/Rare\ Gallery\ wallpaper.jpeg);
     background-size: cover;
+    background-position: center;
 }
 

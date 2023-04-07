@@ -1,6 +1,6 @@
 const grid = document.querySelector('.content');
 const spanPlayer = document.querySelector(".player");
-const timer = document.querySelector('.timer');
+const bg = document.querySelector('.bg_video');
 
 const characters = [
 'ahri',
@@ -44,8 +44,13 @@ const checkEndGame = () => {
 
     if ( disabledCards.length === 50){
         clearInterval(this.loop);
-        alert(`Parabéns, ${spanPlayer.innerHTML}! você conseguiu`);
-    };
+
+        alert(` Parabéns, ${  spanPlayer.innerHTML  }! Você conseguiu aproveite o video!! `);
+
+        
+        
+        bg.style.zIndex = 1000;
+    } 
 };
 
 const checkCards = () => {
@@ -131,21 +136,42 @@ const startTimer = (duration, display) => {
 
     var timer = duration, minutes, seconds
     
-    setInterval(function () {
+    this.loop = setInterval(function () {
         
-        minutes = parseInt
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10)
 
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        display.textContent = minutes + seconds;
+
+        if(--timer < 0){
+            timer = duration;
+        }
 
     }, 1000);
+    
+
     
   }
     
 
 window.onload = () => {
     spanPlayer.innerHTML = localStorage.getItem('player');
-    startTimer();
+
+
+    var display = document.querySelector('.timer');
+    var duration = 60 * 0.1;
+    
+    startTimer(duration, display);
+   
+
+    
+    
     loadGame();
-  }
+}
+  
   
 
    
