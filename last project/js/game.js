@@ -127,13 +127,17 @@ const loadGame = () => {
 };
 
 
-const startTimer = () => {
+const startTimer = (duration, display) => {
 
-    this.loop = setInterval(() => {
-      const currentTime = +timer.innerHTML;
-      timer.innerHTML = currentTime + 1;
+    var timer = duration, minutes, seconds
+    
+    setInterval(function () {
+        
+        minutes = parseInt
+
+
     }, 1000);
-  
+    
   }
     
 
