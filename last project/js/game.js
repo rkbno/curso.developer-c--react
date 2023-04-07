@@ -150,6 +150,18 @@ const startTimer = (duration, display) => {
             timer = duration;
         }
 
+
+        if (timer === 0) {
+            const revealedCards = document.querySelectorAll('.reveal-card');
+            revealedCards.forEach((card) => {
+              card.classList.remove('reveal-card');
+            });
+            alert(`Comece novamente ${ spanPlayer.innerHTML }! :D `)
+            firstCard = '';
+            secondCard = '';
+          }
+          
+
     }, 1000);
     
 
@@ -162,12 +174,10 @@ window.onload = () => {
 
 
     var display = document.querySelector('.timer');
-    var duration = 60 * 0.1;
+    var duration = 60 * 0.2;
     
-    startTimer(duration, display);
+    this.loop = startTimer(duration, display);
    
-
-    
     
     loadGame();
 }
