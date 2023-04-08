@@ -45,7 +45,7 @@ const checkEndGame = () => {
     if ( disabledCards.length === 50){
         clearInterval(this.loop);
 
-        alert(` Parabéns, ${  spanPlayer.innerHTML  }! Você conseguiu aproveite o video!! `);
+        alert(`Parabéns ${localStorage.getItem('player')}! Você conseguiu :D! Aproveite o video.`);
 
         
         
