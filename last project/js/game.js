@@ -132,55 +132,24 @@ const loadGame = () => {
 };
 
 
-const startTimer = (duration, display) => {
+const startTimer = () => {
+    let startTimer = document.querySelector('.timer');
+    let n = 0;
 
-    var timer = duration, minutes, seconds
-    
     this.loop = setInterval(function () {
-        
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10)
-
-        minutes = minutes < 10 ? '0' + minutes : minutes;
-        seconds = seconds < 10 ? '0' + seconds : seconds;
-
-        display.textContent = minutes + seconds;
-
-        if(--timer < 0){
-            timer = duration;
-        }
-
-
-        if (timer === 0) {
-            const revealedCards = document.querySelectorAll('.reveal-card');
-            revealedCards.forEach((card) => {
-              card.classList.remove('reveal-card');
-            });
-            alert(`Comece novamente ${ spanPlayer.innerHTML }! :D `)
-            firstCard = '';
-            secondCard = '';
-          }
-          
-
-    }, 1000);
-    
-
-    
-  }
+    startTimer.innerHTML = n;
+    ++n;
+}, 1000);
+};
     
 
 window.onload = () => {
     spanPlayer.innerHTML = localStorage.getItem('player');
 
-
-    var display = document.querySelector('.timer');
-    var duration = 60 * 0.2;
-    
-    this.loop = startTimer(duration, display);
+    this.loop = startTimer();
    
-    
     loadGame();
-}
+};
   
   
 
